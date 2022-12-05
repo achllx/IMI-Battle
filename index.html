@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css" />
+    <script src="style.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="popup.css" />
+    <title>IMI'Project</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">IMI Battle</div>
+        <div id="loginbar">
+            <div id="button1" style="margin-left: 119px; font-size: 30px" onclick="login()">
+                Login
+            </div>
+            <div id="button1" style="margin-left: 5px; margin-right: 80px; color: grey" onclick="signup()">
+                Sign UP
+            </div>
+            <div style="padding-left: 100px; font-family: lunchds">
+                Username :
+                <input id="UNlogin" type="text" style="
+              font-family: lunchds;
+              margin-left: 15px;
+              width: 250px;
+              height: 25px;
+            " />
+            </div>
+            <div style="padding-left: 100px; font-family: lunchds">
+                Password :
+                <input type="password" id="PWlogin" style="margin-left: 15px; width: 250px; height: 25px" />
+            </div>
+
+            <div id="button3" style="margin-left: 240px; width: 150px" onclick="forget_password()">
+                Forgot Password
+            </div>
+            <div id="button3" style="margin-left: 47px" onclick="loginbutton()">
+                Login
+            </div>
+        </div>
+
+        <div id="signupbar">
+            <div id="button1" style="margin-left: 119px; color: grey" onclick="login()">
+                Login
+            </div>
+            <div id="button1" style="margin-left: 5px; margin-right: 80px; font-size: 30px" onclick="signup()">
+                Sign UP
+            </div>
+
+            <div style="padding-left: 100px; font-family: lunchds">
+                Email
+                <p style="display: inline; margin-left: 33px">:</p>
+                <input id="Email" type="email" style="
+              font-family: lunchds;
+              margin-left: 16px;
+              width: 249px;
+              height: 25px;
+            " />
+            </div>
+            <div style="padding-left: 100px; font-family: lunchds">
+                Username :
+                <input id="UNsignup" type="text" style="
+              font-family: lunchds;
+              margin-left: 15px;
+              width: 250px;
+              height: 25px;
+            " />
+            </div>
+            <div style="padding-left: 100px; font-family: lunchds">
+                Password :
+                <input type="password" id="PWsignup" style="margin-left: 15px; width: 250px; height: 25px" />
+            </div>
+
+            <!-- <div id="button4" style="margin-left: 240px; width: 100px;" onclick="">Upload Profile</div> -->
+            <div id="button4" style="margin-left: 425px" onclick="createbutton()">
+                Create
+            </div>
+        </div>
+    </div>
+
+    <div id="message"></div>
+    <div id="verif" class="modal">
+        <div class="modal-content">
+            <div style="text-align: center">Forgot Password</div>
+            <br />
+            <div style="">Enter your email:</div>
+            <input type="email" id="Email1" style="width: 200px" />
+            <br />
+            <div onclick="getpass()" style="
+            margin: 5px 0 5px 0;
+            width: 50px;
+            height: 25px;
+            text-align: center;
+            background-color: white;
+            color: #2d4875;
+            border: solid 1px #8a91c0;
+            cursor: pointer;
+          ">
+                Get
+            </div>
+            this your password:
+            <div id="result" style="
+            color: black;
+            border: 1px solid white;
+            height: 20px;
+            background-color: white;
+          "></div>
+            <div id="back" onclick="back()" style="
+            margin-top: 5px;
+            width: 50px;
+            text-align: center;
+            background-color: white;
+            color: #2d4875;
+            border: solid 1px #8a91c0;
+            cursor: pointer;
+          ">
+                Back
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

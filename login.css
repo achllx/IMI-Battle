@@ -1,0 +1,118 @@
+@font-face {
+    font-family: lunchds;
+    src: url(design/lunchds.ttf);
+}
+@font-face {
+    font-family: beltane;
+    src: url(design/beltane.ttf);
+}
+
+body{
+    background-image: url('design/background.gif') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#container{
+    /* border: 2px solid red; */
+    height: 75%;
+    width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+#title{
+    text-align: center;
+    font-size: 60px;
+    float: center;
+    color: rgba(37, 35, 93, 0.802);
+    font-family: lunchds;
+    margin-bottom: 25px;
+}
+/* Login inteface */
+#loginbar{
+    /* border: 2px solid red; */
+    display: block;
+    margin: auto;
+    background-image: url(design/Design-Game-Rectangle2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 590px;
+    height: 350px;
+    font-size: 20px;
+    color: white;
+}
+#button1{
+    /* border: 1px solid white; */
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    width: 170px;
+    height: 35px;
+    font-size: 25px;
+    margin-top: 3px;
+    padding-top: 12px;
+    margin-bottom: 65px;
+    font-family: lunchds;
+    color: white;
+}
+#button3{
+    float: left;
+    margin-top: 50px;
+    font-size: 80%;
+    width: 55px;
+    height: 25px;
+    padding-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: #2d4875;
+    border: solid 1px #8a91c0;
+    cursor: pointer;
+}
+/* sign up interface */
+#signupbar{
+    /* border: 2px solid red; */
+    display: none;
+    margin: auto;
+    background-image: url(design/Design-Game-Rectangle2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 590px;
+    height: 350px;
+    font-size: 20px;
+    color: white;
+}
+#button4{
+    float: left;
+    font-size: 80%;
+    width: 70px;
+    height: 25px;
+    margin-top: 30px;
+    padding-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: #1c3c74;
+    border: solid 1px #8a91c0;
+    cursor: pointer;
+}
+
+/* message style */
+#message{
+    /* border: 1px solid white; */
+    margin: 480px 0 0 615px;
+    font-size: 17px;
+    color: white;
+    width: 300px;
+    height: 25px;
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ingame.css">
+    <script src="style1.js"></script>
+    <script src="script1.js"></script>
+    <script src="battle.js"></script>
+    <link rel="stylesheet" href="popup.css">
+    <title>IMI Battle</title>
+</head>
+<body onload="player();profile();Eprofile();enemy();EName();PName()">
+    <div id="container">
+        <div id="game">
+            <div id="profilepicture" style="float: left; margin-top: 220px; margin-left: 150px; width:100px; height:100px;">Profile</div>
+            <div id="enemypicture" style="margin-right: 200px; margin-top: 220px; width: 100px; height: 100px; float: right;"></div>
+        </div>
+        <div id="stts">
+            <div id="PName" style="text-align: center;">Player</div>
+            <div id="player" style="font-size: 15px;"></div>
+            <div id="EName" style="text-align: center;">Enemy</div>
+            <div id="enemy" style="font-size: 15px;"></div>
+        </div>
+        <div id="menu">
+            <div id="profile" class="button" style="margin-top: 15px; height: 25px; width: 100px;" onclick="uploadmodal()">Profile</div>
+            <div id="changepw" class="button" style="margin-top:15px; height: 25px; width: 200px;" onclick="changepassmodal()">Change Password</div>
+            <div id="deleteacc" class="button" style="margin-top: 15px; height: 25; width: 200px;" onclick="delcharmodal()">Delete Account</div>
+            <div id="exit" class="button" style="margin-top: 15px; height: 25px; width: 60px;" onclick="exitmodal()">Exit</div>
+        </div>
+        <div id="text">
+            <div id="battle_message" style="color: white; border: 5px double black; height: 80px;background-color: rgba(0, 0, 0, 0.612);">NOTE: After You attack the enemy with basic attack or skill the enemy will attack you Back!</div>
+            <div id="battle_button" style="width: 150px; padding-top: 5px;border-radius: 5px;text-align: center;margin: auto;background-color: white;color: black;border: solid 1px #8a91c0;cursor: pointer; margin-top: 10px;" onclick="basic()">Basic</div>
+            <div id="battle_button" style="width: 150px; padding-top: 5px;border-radius: 5px;text-align: center;margin: auto;background-color: white;color: black;border: solid 1px #8a91c0;cursor: pointer; margin-top: 5px;" onclick="skill()">Skill</div>
+        </div>
+    </div>
+    <!-- pop up -->
+    <div id="upload" class="modal">
+        <div class="modal-content">
+            <div style="float: left;">Choose file:</div>
+            <input type="file" name="gambar" id="file">
+            <input type="submit" name="upload" value="upload" style="margin-top: 5px;" onclick="upload()">
+            <div id="back" onclick="back()" style=" margin-top: 5px; width: 50px; text-align: center; background-color: white; color: #2d4875; border: solid 1px #8a91c0; cursor: pointer;">Back</div>
+        </div>
+    </div>
+    <div id="delchar" class="modal">
+        <div class="modal-content">
+            <div id="note" style="float: left;">Type CONFIRM to Delete your Account</div>
+            <input id="dctype" type="text" >
+            <input type="submit" value="DELETE" onclick="delchar()">
+            <div style="margin-top: 10px;">NOTE: Your account will delete forever!</div>
+            <div id="back" onclick="back()" style="margin-top: 5px; width: 50px; text-align: center; background-color: white; color: #2d4875; border: solid 1px #8a91c0; cursor: pointer;">Back</div>
+        </div>
+    </div>
+    <div id="changepass" class="modal">
+        <div class="modal-content">
+            <div style="float: left;">New Password:</div>
+            <input id="cppassword" style=" font-family: serif;" type="text">
+            <input type="submit" value="Change" onclick="changepass()">
+            <div style="margin-top: 10px;">NOTE: You will direct back to login session after change password</div>
+            <!-- <div  id="cpmessage" style="color: black; border: 1px solid white; height: 20px; background-color: white;"></div> -->
+            <div id="back" onclick="back()" style="margin-top: 5px; width: 50px; text-align: center; background-color: white; color: #2d4875; border: solid 1px #8a91c0; cursor: pointer;">Back</div>
+        </div>
+    </div>
+    <div id="exit1" class="modal">
+        <div class="modal-content">
+            <div style="text-align: center;">Are sure want to EXIT?</div>
+            <div id="back" onclick="back()" style="float: right; margin-right: 80px; margin-top: 10px; width: 50px; text-align: center; background-color: white; color: #2d4875; border: solid 1px #8a91c0; cursor: pointer;">NO</div>
+            <div onclick="exit()" style="margin-left: 80px; margin-top: 10px; width: 50px; text-align: center; background-color: white; color: #2d4875; border: solid 1px #8a91c0; cursor: pointer;">YES</div>
+        </div>
+    </div>
+</body>
+</html>
